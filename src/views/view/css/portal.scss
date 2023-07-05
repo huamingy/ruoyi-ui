@@ -1,0 +1,22 @@
+.ntts-portal {
+  .map-switch {
+    width: 250px;
+    height: 40px;
+    background-color: rgba(57,134,228, 0.65);
+    position: absolute;
+    z-index: 1000;
+    top: 12vh;
+    right: calc(2vh + 450px + 20px);
+    border-radius: 3px;
+    .switch-div {
+      width: 80px;
+      height: 100%;
+      float: left;
+    }
+  }
+  .earth-icon {
+    margin-top: -2px;
+    width: 18px;
+  }
+
+}

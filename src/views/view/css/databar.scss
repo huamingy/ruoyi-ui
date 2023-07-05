@@ -1,0 +1,111 @@
+.map-data-bar {
+  position: absolute;
+  z-index: 1000;
+  top: 10vh;
+  right: 2vh;
+  box-shadow: 0 0 12px rgba(0,0,0,0.6);
+  width: 450px;
+  border-radius: 5px;
+  .el-card {
+    background: rgba(23,144,247, 0.65) !important;
+    border: none;
+    color: #ffffff;
+  }
+  .el-card__body {
+    height: 280px;
+  }
+  .top-select {
+    width: 100%;
+    height: 50px;
+    .el-date-editor {
+      width: 110px !important;
+      .el-input__prefix {
+        display: none;
+      }
+      .el-input__inner {
+        color: #ffffff;
+        cursor: pointer;
+        padding-left: 15px !important;
+        padding-right: 0 !important;
+      }
+    }
+    .el-input__inner {
+      background-color: rgba(57,134,228, 0.65);
+      border: none;
+      border-radius: 0;
+      height: 34px;
+      color: #ffffff;
+    }
+    input::-webkit-input-placeholder{
+      color:#ffffff;
+    }
+    input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+      color:#ffffff;
+    }
+    input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+      color:#ffffff;
+    }
+    input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
+      color:#ffffff;
+    }
+    .el-input__suffix {
+      color: #ffffff !important;
+      top: 1px;
+    }
+    .el-select__caret {
+      color: #ffffff !important;
+    }
+    .statistic-box {
+      width: 100px;
+      height: 34px;
+      float: right;
+      color: #ffffff;
+      text-align: center;
+      line-height: 32px;
+      margin-top: 1px;
+      background: rgba(3,65,150,0.12);
+      border: 1px solid #0084FF;
+      box-shadow: inset 0 0 10px #0084FF;
+    }
+  }
+  .data-content {
+    width: 100%;
+    .content-bar {
+      width: 100%;
+      height: 105px;
+      .group-data-box {
+        width: 125px;
+        height: 65px;
+        float: left;
+      }
+      .group-data-box:nth-child(n + 2) {
+        margin-left: 17.5px;
+      }
+      .data-box {
+        width: 125px;
+        height: 45px;
+        background: url(/static/mapIcon/div_box.png);
+        text-align: center;
+        font-size: 23px;
+        font-family: Arial;
+        font-weight: bold;
+        color: #5AF1FF;
+        line-height: 46px;
+      }
+      .font-content {
+        background-color: rgba(57,134,228, 0.8);
+        height: 35px;
+        text-align: center;
+        font-size: 14px;
+        font-family: Source Han Sans SC;
+        font-weight: 400;
+        color: #FFFFFF;
+        line-height: 34px;
+      }
+    }
+  }
+  .el-cascader {
+    width: 141px;
+    margin-left: 32px;
+  }
+}

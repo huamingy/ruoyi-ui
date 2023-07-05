@@ -1,0 +1,97 @@
+#top-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 0;
+  box-shadow: 0 0 12px rgba(0,0,0,0.8);
+  background-image: linear-gradient(rgba(13,181,254, 1) ,rgba(12,159,255, 1), rgba(12,144,253, 1));
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  height: 55px;
+  color: #ffffff;
+  .left-title {
+    width: 393px;
+    height: 100%;
+    font-size: 27px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #F3FCFF;
+    line-height: 52px;
+    cursor: pointer;
+    user-select: none;
+    img {
+      margin-top: -3px;
+      margin-left: 10px;
+    }
+  }
+
+  .center-title {
+    position: absolute;
+    font-size: 22px;
+    font-weight: 600;
+    left: 50%;
+    top: 9px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    user-select: none;
+  }
+  .right-title {
+    width: auto;
+    height: 100%;
+    .el-divider--vertical {
+      width: 2px;
+      height: 1.5rem;
+      margin: 16px 12px;
+    }
+  }
+  .weather-box {
+    float: left;
+    user-select: none;
+  }
+  .font-size {
+    font-size: 14px;
+    font-family: Source Han Sans SC;
+    color: #FFFFFF;
+    line-height: 56px;
+  }
+  .font-size span {
+    margin-left: 12px;
+  }
+  .font-color {
+    color: rgb(90,240,254);
+  }
+  .font-color_disable {
+    color: rgb(144, 144, 144);
+  }
+  .my-operate-box {
+    height: 100%;
+    width: 135px;
+    float: right;
+    padding: 14px 0 0 0;
+    .el-dropdown {
+      cursor: pointer;
+    }
+    .el-dropdown:hover {
+      color: rgb(255, 208, 75) !important;
+    }
+    .my-wrapper {
+      .my-avatar {
+        margin: 0 8px 0 -3px;
+        height: 20px;
+      }
+    }
+    .my-wrapper span {
+      color: #ffffff;
+      line-height: 28px;
+      font-size: 14px;
+    }
+    .home-icon {
+      width: 20px;
+      right: 19px;
+      top: 18px;
+      position: absolute;
+      cursor: pointer;
+    }
+  }
+}

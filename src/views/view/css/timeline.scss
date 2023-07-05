@@ -1,0 +1,76 @@
+.map-time-line {
+  position: absolute;
+  z-index: 100;
+  bottom: 4vh;
+  width: 100%;
+  .time_line_box {
+    overflow: hidden;
+    background: aliceblue;
+    width: 840px;
+    height: 65px;
+    margin: 0 auto;
+    box-shadow: 0 0 12px rgba(0,0,0,0.8);
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+
+    .ul_box {
+      width: 900px;
+      height: 60px;
+      display: inline-block;
+      float: left;
+      margin: -3px 2px 5px 2px;
+      overflow: hidden;
+    }
+
+    .my_timeline_item {
+      display: inline-block;
+      width: 120px;
+      cursor: pointer;
+    }
+
+    .my_timeline_item:hover .my_timeline_node {
+      transform: scale(1.25);
+    }
+
+    .my_timeline_item:hover .my_timeline_item_content {
+      transform: scale(1.15);
+    }
+
+    .my_timeline_node {
+      width: 12px;
+      height: 12px;
+      font-size: 18px;
+      background: #969696;
+      box-sizing: border-box;
+      border-radius: 50%;
+      transition: all 0.3s;
+    }
+
+    .my_timeline_item_line {
+      width: 110px;
+      height: 10px;
+      margin: -7px 0 0 12px;
+      border-top: 2px solid #adadad;
+      border-left: none;
+    }
+
+    .my_timeline_item_content {
+      margin: 10px 0 0 -30px;
+      display: flex;
+      flex-flow: column;
+      cursor: pointer;
+      font-size: 15px;
+      transition: all 0.3s;
+      color: #b8b8b8;
+    }
+
+    .node_active {
+      background-color: #00afff;
+      transform: scale(1.25);
+    }
+    .content_active {
+      transform: scale(1.15);
+      color: #00afff;
+    }
+  }
+}
