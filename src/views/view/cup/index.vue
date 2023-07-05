@@ -2,7 +2,6 @@
   <div id="top-header">
     <div class="left-title" @click="refreshWindow">
       <!-- <img src="/static/mapIcon/ntts_icon.png" align="absmiddle" alt="ICON" /> -->
-      江苏省农田退水管理平台
     </div>
     <div class="center-title">测试系统</div>
     <div class="right-title">
@@ -37,18 +36,7 @@
           placement="bottom"
         >
           <el-dropdown trigger="click">
-            <div class="my-wrapper">
-              <!-- <img
-                src="/static/mapIcon/my_icon.png"
-                align="absmiddle"
-                class="my-avatar"
-              /> -->
-              <span>admin</span>
-              <!-- <i
-                class="el-icon-caret-bottom"
-                style="color: #ffffff; margin-left: 3px"
-              /> -->
-            </div>
+            <div class="my-wrapper"></div>
             <el-dropdown-menu slot="dropdown">
               <el-dropdown-item @click.native="logout">
                 <span>退出登录</span>
@@ -62,12 +50,6 @@
           content="返回首页"
           placement="bottom"
         >
-          <!-- <img
-            @click="returnBackstageMain"
-            src="/static/mapIcon/home-icon.png"
-            align="absmiddle"
-            class="home-icon"
-          /> -->
         </el-tooltip>
       </div>
     </div>
