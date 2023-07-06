@@ -22,6 +22,7 @@ export default {
       ThreMain: null,
     };
   },
+
   mounted() {
     this.ThreMain = new ThreMain(this.$refs.threeTarget);
 
