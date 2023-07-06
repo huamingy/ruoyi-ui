@@ -98,19 +98,19 @@ export default {
     //   location.reload();
     // },
     /** 登出 */
-    async logout() {
-      this.$confirm("确定注销并退出系统吗？", "提示", {
-        confirmButtonText: "确定",
-        cancelButtonText: "取消",
-        type: "warning",
-      })
-        .then(() => {
-          this.$store.dispatch("LogOut").then(() => {
-            location.href = "/index";
-          });
-        })
-        .catch(() => {});
-    },
+    // async logout() {
+    //   this.$confirm("确定注销并退出系统吗？", "提示", {
+    //     confirmButtonText: "确定",
+    //     cancelButtonText: "取消",
+    //     type: "warning",
+    //   })
+    //     .then(() => {
+    //       this.$store.dispatch("LogOut").then(() => {
+    //         location.href = "/index";
+    //       });
+    //     })
+    //     .catch(() => {});
+    // },
     /** 返回后台首页 */
     // returnBackstageMain() {
     //   const that = this;
